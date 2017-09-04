@@ -16,39 +16,24 @@ Vue.js를 활용하여 Single Page App을 만들면서, Vue.js의 장단점을 �
    - 라우팅
    - ajax (axios)
    - vue-class-component
-4. 실습
-   - GitHub Agent 만들기
-   - [GitHub API](https://developer.github.com/v3/) 활용
-   - 이론 학습과 병행
-   - 학습 주차가 지날 때마다 리팩토링을 하면서 진행
 
 ## 진행 방식
  - 돌아가면서 발표
  - 일주일당 2개의 주제
  - Markdown으로 진행 (PPT 사용x)
 
-## 실습 환경
- - 미정...
-
-
 ## 폴더 관리
-### 예시
- - 발표자료
-   - 1주차
-     - npm사용법.md
-     - webpack사용법.md
-     - ...
-   - 2주차
-   - 3주차
-   - ...
- - 실습
-   - 김건희
-   - 허규정
-   - 박대호
-   - ...
+- week1
+  - npm사용법.md
+  - webpack사용법.md
+  - ...
+- week2
+- week3
+- ...
 
-### 브랜치 관리
- - 발표자료는 공유
- - 각자 브랜치를 만들고 실습 폴더아래에 자신의 이름으로 폴더생성
- - 생성된 폴더 아래에 실습을 진행
- - 스터디 전날까지 master에 Pull Request
+## 실습
+- 도현, 민교, 원근 [Repository 이동]()
+- 구범, 정민 [Repository 이동]()
+- 재승, 보민 [Repository 이동]()
+- 건희, 규정 [Repository 이동]()
+- 대호 [Repository 이동]()
