@@ -32,7 +32,7 @@ Vue.js를 활용하여 Single Page App을 만들면서, Vue.js의 장단점을 �
 - ...
 
 ## 실습
-- 도현, 민교, 원근 [Repository 이동]()
+- 도현, 민교, 원근 [Repository 이동](https://github.com/LandvibeDev/bus-traffic)
 - 구범, 정민 [Repository 이동]()
-- 재승, 보민, 대호 [Repository 이동]()
-- 건희, 규정 [Repository 이동]()
+- 재승, 보민, 대호 [Repository 이동](https://github.com/LandvibeDev/catch-video)
+- 건희, 규정 [Repository 이동](https://github.com/LandvibeDev/CodeFoilo)
