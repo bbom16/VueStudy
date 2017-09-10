@@ -21,7 +21,6 @@ module bundler가 등장하게 된 이유는 코드가 많아지다 보면 파�
 하지만 javascript는 이러한 모듈간의 import를 지원하지 않기 때문에 webpack을 통해 여러js파일을
 하나로 번들링하여 사용할 수 있습니다.
 
-[![webpack]({{ site.images | relative_url }}/what-is-webpack.png)]({{ site.images | relative_url }}/what-is-webpack.png)
 
 
 ### Webpack을 쓰지 않았을 때?
@@ -65,64 +64,6 @@ webpack은 기본적으로 저 파일을 통해 설정을 확인합니다.
 여러개 설정 가능합니다.
 `output`은 그 entry를 바탕으로 사용하는 모듈들을 불러와서 번들링한 js파일입니다.
 
-# Babel
-## Babel이란?
-간단히 말해서 es6,7..의 코드를 es5로 변환 시켜주는 도구입니다. babel이 필요한
-이유는 모든 브라우저가 es6를 포함한 상위 버전을 지원하지는 않기 때문입니다. ( 익스플로어..)
-
-## Babel 사용
-babel만 이용할 수도 있지만, webpack을 쓸 것이기 때문에 webpack에 달아서 쓰는 연습을
-해보겠습니다.
-
-### babel 설치
-일단 필요한 babel을 설치합니다.
-```
-npm install --save-dev babel-core babel-preset-env babel-preset-stage-2
-```
-
-* 설명
-   * preset : plugin 의 모음
-   * stage :EcmaScript중에서 비공식 실험적인 기술들을 사용할 수 있게 해주는 프리셋
-      * 0,1 : 자주 바뀌는 기술들
-      * 2 : 안정적인 기술
-   * env 프리셋은 최신 ecmascript 사용, 사용자 환경에 맞춰서 polyfill까지 넣어줌
-env를 쓰지 않을 꺼면 babel-preset-es2015 를 설치하여 사용합니다.
-
-### babel-polyfill
-babel만 사용하면 단순히 es6의 문법을 es5로만 바꾸어줍니다. 하지만 이 것이 문제가 되는
-이유는 ES6의 새로운 객체(Promise, Map, Set 등등)과
-메소드(Array.find, Object.assign 등등)을 사용할 수 없습니다.
-예를 들어 설명하겠습니다.
-
-```js
-const foo = {
-  name: 'Homer'
-};
-const bar = Object.assign({}, foo, {age: '?'});
-console.log(Object.keys(foo), Object.keys(bar));
-```
-
-```js
-'use strict';
-var foo = {
-  name: 'Homer'
-};
-var bar = Object.assign({}, foo, { age: '?' });
-console.log(Object.keys(foo), Object.keys(bar));
-```
-출처 : https://stackoverflow.com/questions/36196592/why-do-we-need-to-use-import-babel-polyfill-in-react-components
-아래의 es5문법에서는 Object.assign을 사용할 수 없지만 babel만 사용하면 단순히
-저러한 식으로 변환이 되기 때문에 polyfill이 필요합니다.
-
-poly-fill을 설치합니다. (env를 쓰면 설치할 필요 없습니다)
-```js
-npm install --save-dev babel-polyfill
-```
-webpack 사용시에는
-```js
-import 'babel-polyfill';
-```
-를 사용하면 webpack이 알아서 적용합니다.
 
 ## Webpack loader
 로더는 간단히 말하면 특정 파일을 로드할 때 거치는 과정(?) 이라고 할 수 있습니다.
@@ -227,7 +168,6 @@ import './style.css';
 }
 ```
 webpack으로 빌드한 후 확인합니다.
-[![style-test]({{ site.images | relative_url }}/style-loader-test.PNG)]({{ site.images | relative_url }}/style-loader-test.PNG)
 `<style>` tag가 추가된걸 확인 할 수 있습니다.
 ### 추가적인 기능
 

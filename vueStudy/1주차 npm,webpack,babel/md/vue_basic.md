@@ -1,14 +1,4 @@
----
-bg: ""
-crawlertitle: "vue시작"
-summary: "vue시작"
-layout: post
-title: " vue_basic"
-date: "2017-09-05 14:42"
-categories: posts
-tags: ['vue.js']
-author: jgb
----
+
 vue.js 적용해보기
 
 
@@ -66,7 +56,6 @@ webpack
 ```
 을 통해 빌드를 한 후 확인합니다.
 
-[![vue_test]({{ site.images | relative_url }}/vue_test.png)]({{ site.images | relative_url }}/vue_test.png)
 
 
 (아직 runtime과 compiler를 포함한다는 것에 대한 개념이 확실치 않아서

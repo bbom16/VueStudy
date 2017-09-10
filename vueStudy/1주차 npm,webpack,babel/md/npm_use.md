@@ -1,14 +1,3 @@
----
-bg: ""
-crawlertitle: "npm 사용법"
-summary: "npm 사용법"
-layout: post
-title: "npm 사용법"
-date: "2017-09-05 10:08"
-categories: posts
-tags: ['front-end']
-author: jgb
----
 
 ## npm이란?
 npm은 node packaged modules 의 약자로 node.js에서 필요한 모듈을 패키지로
