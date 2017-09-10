@@ -1,14 +1,3 @@
----
-bg: ""
-crawlertitle: "webpack기본"
-summary: "webpack기본"
-layout: post
-title: "webpack"
-date: "2017-09-05 12:30"
-categories: posts
-tags: ['front-end']
-author: jgb
----
 
 ## Webpack이란?
 > 웹팩은 모듈 번들러 입니다.
