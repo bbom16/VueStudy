@@ -1,0 +1,22 @@
+{
+  "name": "vue-template",
+  "version": "1.0.0",
+  "description": "vue-tutorial",
+  "main": "vue-template.js",
+  "dependencies": {
+    "vue": "^2.4.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
