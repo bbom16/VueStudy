@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js Study</title>
+</head>
+<body>
+
+  <div id="app">
+    <p>original: {{ message }}</p>
+    <p>reversed: {{ message.split('').reverse().join('') }}</p>
+    <p>reversed: {{ reversedMessage }}</p>
+    <p>reversed: {{ reverseMessage() }}</p>
+  </div>
+
+  <!-- vue.js -->
+  <script src="https://unpkg.com/vue"></script>
+  <script type="text/javascript">
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+    },
+    computed: {
+      reversedMessage: function(){
+        return this.message.split('').reverse().join('');
+      }
+    },
+    methods: {
+      reverseMessage: function () {
+        return this.message.split('').reverse().join('');
+      }
+    }
+  })
+  </script>
+</body>
+</html>
