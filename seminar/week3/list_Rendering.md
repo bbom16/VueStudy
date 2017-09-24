@@ -135,26 +135,26 @@ example1.items = example1.items.filter(function (item) {
 ###### 배열에 변경 감지
 1. 인덱스로 배열에 있는 항목을 직접 설정할 경우
 ```js
-```x
+//x
 v.items[index] = newvalue
 ```
 ```js
-```o
-``` Vue.set
+//o
+// Vue.set
 Vue.set(example1.items, indexOfItem, newValue)
 ```
 ```js
-```o
-``` Array.prototype.splice
+//o
+//Array.prototype.splice
 example1.items.splice(indexOfItem, 1, newValue)
 ```
 2. 배열의 길이를 수정할 경우
 ```js
-```x
+//x
 v.items.length = newlength
 ```
 ```js
-```o
+//o
 example1.items.splice(newLength)
 ```
 
@@ -165,9 +165,9 @@ var vm = new Vue({
     a: 1
   }
 })
-``` `vm.a` 는 반응형입니다.
+// `vm.a` 는 반응형입니다.
 vm.b = 2
-``` `vm.b` 는 반응형이 아닙니다.
+// `vm.b` 는 반응형이 아닙니다.
 ```
 속성 및 삭제를 감지하지 못한다.
 ```js
