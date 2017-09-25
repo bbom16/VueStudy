@@ -67,7 +67,7 @@ new Vue({
 ###### 객체를 반복할 때 순서는 Object.keys()의 키 나열 순서에 따라 결정되므로 JavaScript 엔진 구현에 따라 다르다.
 
 #### v-for의 범위
-```
+```html
 <div>
   <span v-for="n in 10">{{ n }} </span>
 </div>
@@ -76,13 +76,13 @@ new Vue({
 
 #### v-for 와 v-if
 v-for 가 v-if 보다 더 높은 우선순위를 가진다.
-```
+```html
 <li v-for="todo in todos" v-if="!todo.isComplete">
   {{ todo }}
 </li>
 ```
 for문이 일단 실행되고 todo.isComplete에 결과에 따라 결과값이 결정된다.
-```
+```html
 <ul v-if="shouldRenderTodos">
   <li v-for="todo in todos">
     {{ todo }}
@@ -92,7 +92,7 @@ for문이 일단 실행되고 todo.isComplete에 결과에 따라 결과값이 �
 shouldRenderTodos의 true/false 결과에 따라 v-for 사용여부가 결정된다.
 
 #### key
-```
+```html
 <div v-for="item in items" v-bind:key="item.id">
   <!-- content -->
 </div>
@@ -115,7 +115,7 @@ Vue가 기존 엘리먼트를 재사용하고 재정렬하려면 고유한 key �
 원본 배열을 변경한다.
 
 예 :
-```
+```js
 example1.items.push({ message: 'Baz' })
 ```
 
@@ -126,7 +126,7 @@ example1.items.push({ message: 'Baz' })
 원본 배열이 아닌 새 배열을 반환한다. 하지만 전체 목록을 다시 렌더링하지 않고 효율적으로 구현한다.
 
 예:
-```
+```js
 example1.items = example1.items.filter(function (item) {
   return item.message.match(/Foo/)
 })
